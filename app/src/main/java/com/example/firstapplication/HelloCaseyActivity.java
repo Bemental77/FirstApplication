@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class HelloDroidActivity extends AppCompatActivity {
+public class HelloCaseyActivity extends AppCompatActivity {
     private TextView message;
     private int counter = 0;
 
