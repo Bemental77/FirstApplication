@@ -5,6 +5,9 @@ plugins {
 android {
     compileSdkVersion 32
     buildToolsVersion "32.0.0"
+    packagingOptions{
+        pickFirst 'androidsupportmultidexversion.txt'
+    }
 
     defaultConfig {
         applicationId "com.example.firstapplication"
@@ -12,6 +15,8 @@ android {
         targetSdkVersion 32
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,4 +41,7 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+    implementation 'com.android.support:multidex:1.0.3'
+
 }
